@@ -8,6 +8,8 @@ class AppointmentScheduling
 
     static constraints =
     {
-    	
+    	petName (blank:false, minSize:1)
+    	doctor (blank:false, minSize:7)
+    	date (blank:false)
     }
 }

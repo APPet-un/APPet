@@ -10,6 +10,8 @@ class LabFile
 
     static constraints =
     {
-
+    	code (unique:true, blank:false, min:1)
+    	date (blank:false)
+    	name (blank:false, minSize:5)
     }
 }

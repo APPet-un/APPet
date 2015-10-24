@@ -10,6 +10,7 @@ class Laboratory
 
     static constraints =
     {
-    	
+    	date (blank:false)
+    	diagnostic (blank:false, size:5..10000)
     }
 }

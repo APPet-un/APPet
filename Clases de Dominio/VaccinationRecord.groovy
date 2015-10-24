@@ -9,6 +9,9 @@ class VaccinationRecord
 
     static constraints =
     {
-    	
+    	type (blank:false, minSize:4)
+    	comments (blank:true)
+    	administerDate (blank:false)
+    	expirationDate (blank:false)
     }
 }

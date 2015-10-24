@@ -13,6 +13,13 @@ class User
 
     static constraints =
     {
-    	
+    	id (unique:true, blank:false, min:1)
+    	firstName (blank:false, minSize:3)
+    	lastName (blank:false, minSize:3)
+    	telephone (blank:false, size:8)
+    	movilPhone (blank:true, size:10)
+    	address (blank:true, minSize:6)
+    	registryType (blank:false)
+    	type (blank:false)
     }
 }
