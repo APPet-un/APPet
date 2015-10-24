@@ -6,9 +6,9 @@ class Veterinary
 	String name
 	String address
 	String webPage
-	//Hacer una tabla con el campo de SERVICIOS
 	int telephone
 	int movilPhone
+	static hasMany= [services: Services]
 
     static constraints =
     {
