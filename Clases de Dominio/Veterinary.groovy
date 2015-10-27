@@ -8,7 +8,7 @@ class Veterinary
 	String webPage
 	int telephone
 	int movilPhone
-	static hasMany= [services: Services]
+	static hasMany= [services: Service]
 
     static constraints =
     {

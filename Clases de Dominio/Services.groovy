@@ -1,6 +1,6 @@
 package appet.loca
 
-class Services
+class Service
 {
 	String name
 	String description
