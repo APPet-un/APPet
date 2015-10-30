@@ -182,7 +182,7 @@ public abstract class AbstractFilter extends GenericFilterBean {
 	 * not accept GZIP encoding.
 	 *
 	 * @param request
-	 * @return true, if the User Agent request accepts GZIP encoding
+	 * @return true, if the appet.User Agent request accepts GZIP encoding
 	 */
 	protected boolean acceptsGzipEncoding(HttpServletRequest request) {
 		return acceptsEncoding(request, "gzip");
