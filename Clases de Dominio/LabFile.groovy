@@ -14,4 +14,7 @@ class LabFile
     	date (blank:false)
     	name (blank:false, minSize:5)
     }
+    static mapping = {
+        id generator: 'increment'//, name: 'lab_file_id', type: 'integer'
+    }
 }
