@@ -1,1 +1,0 @@
-Cuando se vayan a copiar estas clases a las clases del proyecto hay que cambiarles el nombre del Packaage
