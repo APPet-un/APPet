@@ -15,12 +15,12 @@ class VaccinationRecord
     	administerDate (blank:false)
     	expirationDate (blank:false)
 
-		vaccinationTypes validator:{
-			vaccinationTypes.each {
-				if (it != "")
-					return ['Vacuna invalida']
-			}
-		}
+	vaccinationTypes validator:{
+	  vaccinationTypes.each {
+	    if (it != "")
+		return ['Vacuna invalida']
+	  }
+	}
     }
 	static mapping = {
 		id generator: 'increment'//, name: 'vaccination_record_id'
