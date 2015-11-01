@@ -1,5 +1,8 @@
 package appet
+import grails.rest.Resource
 
+
+@Resource(uri='/labfile')
 class LabFile
 {
 	//int code

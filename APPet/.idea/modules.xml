@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APPet.iml" filepath="$PROJECT_DIR$/APPet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APPet-grailsPlugins.iml" filepath="$PROJECT_DIR$/APPet-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
