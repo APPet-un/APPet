@@ -43,7 +43,7 @@ public class CacheConfigArtefactHandler extends ArtefactHandlerAdapter {
 	/**
 	 * GrailsClass interface for CacheConfig definitions.
 	 */
-	public static interface CacheConfigGrailsClass extends InjectableGrailsClass {
+	public interface CacheConfigGrailsClass extends InjectableGrailsClass {
 		// no methods
 	}
 

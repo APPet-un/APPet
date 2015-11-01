@@ -61,7 +61,7 @@ public class Header<T extends Serializable> implements Serializable {
 		private static final Map<Class<? extends Serializable>, Type> TYPE_LOOKUP = new ConcurrentHashMap<Class<? extends Serializable>, Type>();
 		private final Class<? extends Serializable> type;
 
-		private Type(Class<? extends Serializable> type) {
+		Type(Class<? extends Serializable> type) {
 			this.type = type;
 		}
 

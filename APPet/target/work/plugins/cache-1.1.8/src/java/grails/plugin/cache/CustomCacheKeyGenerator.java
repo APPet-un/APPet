@@ -102,9 +102,7 @@ public class CustomCacheKeyGenerator implements KeyGenerator {
 					return false;
 			} else if (!targetMethodName.equals(other.targetMethodName))
 				return false;
-			if (targetObjectHashCode != other.targetObjectHashCode)
-				return false;
-			return true;
+			return targetObjectHashCode == other.targetObjectHashCode;
 		}
 	}
 

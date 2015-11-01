@@ -1,1 +1,1 @@
-console.log("This should be required by gstringtest.js")
+console.log("This should be required by gstringtest.js");
