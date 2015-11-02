@@ -9,10 +9,27 @@ import spock.lang.Specification
 @TestFor(Pet)
 class PetSpec extends Specification {
 
+	Pet p
+
     def setup() {
+    	p= new Pet(name:"pepe", bornDate:31-10-2015, gender:"M", species:"Perro", breed:"chanda", color:"rojo", signals:"qwert", microchip:false)
     }
 
     def cleanup() {
+    }
+
+    def "verificacion de creacion"()
+    {
+    	expect:
+    	p.name== "pepe"
+    	p.bornDate!= null
+    	//p.gender== "D"
+    	p.gender== "M"
+    	p.species== "Perro"
+    	p.breed== "chanda"
+    	p.color== "rojo"
+    	p.signals== "qwert"
+    	p.microchip== false
     }
 
     void "test something"() {
