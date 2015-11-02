@@ -1,0 +1,120 @@
+ <nav class="navbar navbar-default color-header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="facehome"><img src="images/logo2.png"></a>
+    </div>
+    <div class="header-wrapper">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="adoptar">Adopción</a></li>
+        <li><a ui-sref="buscarPareja">Buscar pareja</a></li>
+      
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">buscar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="login">Iniciar sesión</a></li>
+        <li><a ui-sref="registro">Registrarse</a></li>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div> <!-- /.head-wrapper -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- Page Content -->
+    <div class="container2">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Menu</p>
+                <div class="list-group">
+                    <a ui-sref="datosReg" class="list-group-item">Editar mis datos</a>
+                    <a ui-sref="addAdoptar" class="list-group-item">Agregar mascota para adoptar</a>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-9">
+               <div class = "row">
+                <div class="col-md-12" ng-repeat="u in user">
+                    <div class="col-sm-6 col-lg-6 col-md-6">
+                    <p class="lead">Mis datos</p>
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <p><strong>Nombre:</strong> {{u.nombre}}</p>
+                                <p><strong>Apellido:</strong>  {{u.apellido}}</p>
+                                <p><strong>Username:</strong> {{u.username}}</p>
+                                <p><strong>E-mail:</strong>  {{u.correo}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 col-md-6">
+                        <p class="lead">Mis datos</p>
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <p><strong>Dirección:</strong>  {{u.direccion}}</p>
+                                <p><strong>Telefono:</strong>  {{u.telefono}}</p>
+                                <p><strong>Celular:</strong>  {{u.celular}}</p>
+                                <p><strong>Genero:</strong>  {{u.genero}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                        
+                </div>
+               </div>
+                <div class="row">
+                    <h2>  Mis mascotas:</h2>
+                    <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="mascota in misMascotas">
+                        <div class="thumbnail">
+                            <img ng-src="{{mascota.imagen}}" class="img-home-mascota">
+                            <div class="caption">
+                                <h4><a href="#">{{mascota.nombre}}</a>
+                                </h4>
+                                <p>Raza: {{mascota.raza}}</p>
+                                <p>Edad: {{mascota.edad}}</p>
+                                <p>Color: {{mascota.color}}</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container2">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                     <p>Copyright &copy; APPet 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->

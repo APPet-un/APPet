@@ -1,0 +1,72 @@
+<div class="jumbotron text-center">
+    <h1>Registra tus datos</h1>
+    <p>Registra tus datos y los de tu mascota, para que esten dentro de una veterinaria</p>
+    
+    <a ui-sref="datosReg" class="btn btn-primary">Datos de usuario</a>
+    <a ui-sref="veterinariaReg" class="btn btn-danger">Datos veterinaria</a>
+    <a ui-sref="mascotaReg" class="btn btn-primary">Registar mis mascotas</a>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <form role="form" ng-submit="addMascotas()">
+    <div class="form-group">
+            Nombre de la mascota: <input type="text"  class="form-control" ng-model="user.nombreMa" /><br />
+            Fecha nacimiento mascota: <input type="date"  class="form-control" ng-model="user.fechaCum" /><br />
+            Raza: <input type="text"  class="form-control" ng-model="user.raza" /><br />
+            Color: <input type="text"  class="form-control" ng-model="user.color" /> <br/>
+            Genero: <select name="singleSelect"   class="form-control" ng-model="user.genero"> 
+              <option value="option-1" >Macho</option>
+              <option value="option-2" >Hembra</option>
+            </select><br>
+            Foto: <input type="file"  class="form-control" ng-model="user.file" /> <br/>
+            
+            
+    </div>
+    
+  <input type="submit" class="btn btn-primary" value="Agregar mascota">
+</form>
+
+<br>
+
+      
+    </div>
+    
+    <div class="col-sm-6">
+     <table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Fecha cumpleaños</td>
+            <td>Raza</td>
+            <td>Color</td>
+            <td>Genero</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr ng-repeat="mascota in Mascotas">
+            <td>{{ mascota.nombre }}</td>
+            <td>{{ mascota.fechaCum }}</td>
+            <td>{{ mascota.raza }}</td>
+            <td>{{ mascota.color }}</td>
+            <td>{{ mascota.genero }}</td>
+        </tr>
+        
+    </tbody>
+</table>
+ <br>
+        <div class="col-xs-6 col-xs-offset-3">
+          <a ui-sref="home.veterinaria" ng-click="agregarDatos()" class="btn btn-block btn-info">
+          Agregar datos <span class="glyphicon glyphicon-circle-arrow-right"></span>
+          </a>
+   
+    </div>
+  
+          
+  </div>
+  
+</div>

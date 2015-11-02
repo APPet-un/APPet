@@ -1,0 +1,34 @@
+<div class="jumbotron text-center">
+    <h1>Registra tus datos</h1>
+    <p>Registra tus datos y los de tu mascota, para que esten dentro de una veterinaria</p>
+    
+    <a ui-sref="datosReg" ui-sref-active="active" class="btn btn-primary">Datos de usuario</a>
+    <a ui-sref="veterinariaReg" ui-sref-active="active" class="btn btn-danger">Datos veterinaria</a>
+    <a ui-sref="mascotaReg" ui-sref-active="active" class="btn btn-primary">Registar mis mascotas</a>
+</div>
+
+<div class="container">
+
+    <div class="form-group">
+        Nombre: <input type="text"  class="form-control" ng-model="user.nombre" /><br />
+        Apellido: <input type="text"  class="form-control" ng-model="user.apellido" /><br />
+        Direccion: <input type="text"  class="form-control" ng-model="user.direccion" /><br />
+        Telefono: <input type="text"  class="form-control" ng-model="user.telefono" /> <br/>
+        Celular: <input type="text"  class="form-control" ng-model="user.celular" /> <br/>
+        Genero: <select name="singleSelect"   class="form-control" ng-model="user.genero"> 
+          <option value="option-1">Masculino</option>
+          <option value="option-2">Femenino</option>
+        </select><br>
+        
+    </div>
+
+    <div class="form-group row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="veterinariaReg" class="btn btn-block btn-info">
+        Siguiente Sección <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+    </div>
+
+<div>
+

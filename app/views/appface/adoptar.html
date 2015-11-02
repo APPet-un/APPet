@@ -1,0 +1,120 @@
+<nav class="navbar navbar-default color-header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="facehome"><img src="images/logo2.png"></a>
+    </div>
+    <div class="header-wrapper">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="adoptar">Adopción</a></li>
+        <li><a ui-sref="buscarPareja">Buscar pareja</a></li>
+      
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">buscar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="login">Iniciar sesión</a></li>
+        <li><a ui-sref="registro">Registrarse</a></li>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div> <!-- /.head-wrapper -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container2">
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Filtrar información</p>
+                <form>
+                        <h4>Raza</h4>
+                         <select class="form-control" ng-model="raza" ng-options="name for (cuisine, name) in RAZA_OPTIONS">
+                             <option value="">-- escoge la raza --</option>
+                         </select>
+                        
+                        <h4>Color</h4>
+                         <select class="form-control" ng-model="color" ng-options="name for (cuisine, name) in COLOR_OPTIONS">
+                             <option value="">-- escoge el color --</option>
+                        </select>
+                        
+                        <h4>Edad</h4>
+                        <div>
+                          <input class="form-control" type="number" name="input" ng-model="edad"
+                                min="0" max="20" >
+                        </div>
+                    </form>
+            </div>
+
+            <div class="col-md-9">
+                    <h4 ng-show="error" ng-cloak>error</h4>
+                    <table st-table="rowCollectionAdop" class="table table-striped">
+                      <tr>
+                        <th> Descripcion:</th>
+                        <th  st-sort="color">Color</th>
+                        <th  st-sort="raza">Raza</th>
+                        <th  st-sort="edad">Edad</th>
+                      </tr>
+                      <tr ng-repeat="mascota in rowCollectionAdop | filter: { raza: raza , edad: edad, color: color }">
+                        <td>
+                          <a ui-sref="">
+                            <img class="img-rounded pull-left img-buscar-mascota" ng-src="{{mascota.imagen}}">
+                            <b>{{mascota.titulo}}</b>
+                          </a>
+                          <p>{{mascota.descripcion}}</p>
+                        </td>
+                        <td>
+                          {{mascota.color}}
+                        </td>
+                        <td>
+                         {{mascota.raza}}
+                        </td>
+                        <td>
+                         {{mascota.edad}}
+                        </td>
+                      </tr>
+
+                      <!--tfoot>
+                        <tr>
+                          <td colspan="5" class="text-center">
+                            <div st-pagination="" st-items-by-page="3" st-displayed-pages="7"></div>
+                          </td>
+                        </tr>
+                      </tfoot-->
+                    </table>
+                  
+                    
+            </div>    
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; APPet 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</div>

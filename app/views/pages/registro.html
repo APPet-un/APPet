@@ -1,0 +1,29 @@
+<div class="jumbotron text-center">
+    <h1>Registro de usuario</h1>
+    <p>Registrate Gratis en APPet</p>
+    
+</div>
+
+
+<div class="container">
+	<form role="form" ng-submit="register()" >
+	<div >
+        Username: <input type="text"  class="form-control" ng-model="user.nombre" requiered/><br />
+        Correo: <input type="email"  class="form-control" ng-model="user.apellido" required/><br />
+       	Contraseña: <input class="form-control" ng-model="user.password" type="password" />
+		    Ver contraseña para confirmar: <input type="checkbox" ng-model="user.verContra">
+        <br>
+        <h4 ng-show="user.verContra == true">{{user.password}}</h4>
+
+         
+    </div>
+    <br>
+
+   <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <button type="reset" class="btn btn-default">Cancelar</button>
+        </div> 
+   </form>
+    
+</div>
+

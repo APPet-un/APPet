@@ -1,0 +1,124 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Registrar una Mascota</h1>
+    </div>  
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                
+            </div>
+            <div class="panel-body">
+            <form role="form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        
+                        	<h1> Datos de la mascota </h1>
+                        	<div class="form-group">
+                                <label>Foto de la mascota</label>
+                                <input type="file">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input class="form-control" placeholder="Ingrese el nombre de la mascota" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Genero</label>
+                                <select class="form-control" required>
+                                    <option>Perro</option>
+                                    <option>Gato</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                            	<label> Fecha de nacimiento </label>
+                           		<input type="date" name="input" 
+       								placeholder="01/01/2015" min="01-01-1990" max="12-31-2035" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Color</label>
+                                <input class="form-control" placeholder="Color de la mascota" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Señas particulares</label>
+                                <textarea class="form-control" rows="3" placeholder="Ingrese señas particulares que tenga la mascota"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Microchip</label>
+                                <label class="radio-inline">
+                                    <input type="radio" required>Si
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" required>No
+                                </label>
+                            </div>
+
+                            
+                            
+                        
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                    <div class="col-lg-6">
+                        <h1>Datos del propietario</h1>
+                       
+                        	<div class="form-group">
+                                <label>Nombre</label>
+                                <input class="form-control" placeholder="Ingrese el nombre del pripietario" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Apellido</label>
+                                <input class="form-control" placeholder="Ingrese el nombre del propietario" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Dirección</label>
+                                <input class="form-control" placeholder="Dirección del propietario">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Ciudad</label>
+                                <input class="form-control" placeholder="Ciudad de residencia del propietario" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Telefono</label>
+                                <input class="form-control" placeholder="Telefono fijo del propietario">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Celular</label>
+                                <input class="form-control" placeholder="Celular del propietario" required>
+                            </div>
+
+                            <label> Correo electrónico </label>
+                            <div class="form-group input-group">
+                            	<span class="input-group-addon">@</span>
+                                <input type="email" class="form-control" placeholder="Ingrese el correo electrónico del propietario" required>
+                            </div>	
+
+                    	
+                                    
+                            </div>
+                         <button type="submit" class="btn btn-default">Guardar</button>
+                         <button type="reset" class="btn btn-default">Cancelar</button>
+                        
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                </div>
+                <!-- /.row (nested) -->
+                </form>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
