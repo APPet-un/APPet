@@ -62,7 +62,7 @@ class AssetPipelineFilter implements Filter {
                         response.outputStream << file.inputStream.getBytes()
                         response.flushBuffer()
                     } catch(e) {
-                        log.debug("File Transfer Aborted (Probably by the user)",e)
+                        log.debug("File Transfer Aborted (Probably by the userCon)",e)
                     }
                  } else {
                     response.flushBuffer()
@@ -89,7 +89,7 @@ class AssetPipelineFilter implements Filter {
                     response.outputStream << fileContents
                     response.flushBuffer()
                 } catch(e) {
-                    log.debug("File Transfer Aborted (Probably by the user)",e)
+                    log.debug("File Transfer Aborted (Probably by the userCon)",e)
                 }
             } else {
                 response.status = 404

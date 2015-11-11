@@ -112,6 +112,6 @@ environments {
 
 h3. Custom Files
 
-Asset Pipeline uses classes of type @AssetFile@. By default, this plugin comes with a @JsAssetFile@, and @CssAssetFile@. These define the match pattern syntax for understanding requires directives, known extensions, processors, and content-type. The application bases its file look-up on content-type of the request rather than extension. This allows the user to maybe define a @CoffeeAssetFile@ with the JavaScript content type and a request to @localhost/assets/app.js@ would be able to find @assets/app.coffee@. To add custom file definitions you must add the definition in 2 locations:
+Asset Pipeline uses classes of type @AssetFile@. By default, this plugin comes with a @JsAssetFile@, and @CssAssetFile@. These define the match pattern syntax for understanding requires directives, known extensions, processors, and content-type. The application bases its file look-up on content-type of the request rather than extension. This allows the userCon to maybe define a @CoffeeAssetFile@ with the JavaScript content type and a request to @localhost/assets/app.js@ would be able to find @assets/app.coffee@. To add custom file definitions you must add the definition in 2 locations:
 
 Create a @META-INF/asset-pipeline/asset.specs@ file with the name of your class file (line seperated) to be added to the list of valid implementations. For more information check out the section on extending the asset-pipeline.

@@ -39,7 +39,7 @@ class JQueryResourceTagLib {
 
         def flavour = Environment.isDevelopmentMode() ? '' : '.min'
         def fn = "jquery-${jqver}${flavour}.js"
-        // Let user specify local="true" to stop us loading from the plugin, instead from the app
+        // Let userCon specify local="true" to stop us loading from the plugin, instead from the app
         def local = attrs.remove('local')?.toString()
         def pluginName = local?.toBoolean() ? null : 'jquery'
         out << """<script src="${g.resource(plugin:pluginName, dir:'js/jquery', file:fn).encodeAsHTML()}" type="text/javascript"></script>"""
