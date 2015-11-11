@@ -2,16 +2,18 @@ package appet
 
 import grails.rest.Resource
 
+@Resource(uri='/userCon')
+class User {
 
-@Resource(uri='/user')
-class User
-{
+	transient springSecurityService
+
 	String firstName
 	String lastName
 	String address
 	int telephone
 	int mobilPhone
 	String emailUser
+	String password
 
     static constraints = {
     	firstName (blank:false, minSize:3)
@@ -20,9 +22,28 @@ class User
     	mobilPhone (blank:true, size:10)
     	address (blank:true, minSize:6)
     	emailUser(blank: false,email: true)
+		password(blank: false)
     }
 	static mapping = {
 		id generator: 'increment'
+		password column: 'password'
 		//id name: 'pet_id', type: 'integer'
 	}
+
+	def beforeInsert(){
+		encodePassword()
+	}
+
+	def beforeUpdate(){
+		if(isDirty('password'))
+			encodePassword()
+	}
+
+	protected void encodePassword(){
+		password = springSecurityService.encodePassword(password)
+	}
+	Set<User>getAuthorities(){
+		UserRole.findAllByUser(this).collect{it.role} as Set
+	}
+
 }

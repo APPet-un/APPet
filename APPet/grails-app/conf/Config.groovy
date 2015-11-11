@@ -13,7 +13,7 @@
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 
-// The ACCEPT header will not be used for content negotiation for user agents containing the following strings (defaults to the 4 major rendering engines)
+// The ACCEPT header will not be used for content negotiation for userCon agents containing the following strings (defaults to the 4 major rendering engines)
 grails.mime.disable.accept.header.userAgents = ['Gecko', 'WebKit', 'Presto', 'Trident']
 grails.mime.types = [ // the first one is the default format
     all:           '*/*', // 'all' maps to '*' or the first available format in withFormat
@@ -85,6 +85,45 @@ grails.hibernate.pass.readonly = false
 // configure passing read-only to OSIV session by default, requires "singleSession = false" OSIV mode
 grails.hibernate.osiv.readonly = false
 
+
+grails.plugin.springsecurity.rest.token.storage.useGorm = true
+grails.plugin.springsecurity.rest.login.useJsonCredentials = true
+grails.plugin.springsecurity.rest.token.storage.gorm.tokenDomainClassName = 'appet.AuthenticationToken'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'appet.User'
+grails.plugin.springsecurity.authorityJoinclassname = 'appet.UserRole'
+grails.plugin.springsecurity.auth.loginFormUrl = '/login/auth'
+//grails.plugin.springsecurity.rest.token.storage.gorm.tokenValuePropertyName = 'token'
+//grails.plugin.springsecurity.rest.token.storage.gorm.usernamePropertyName = 'username'
+
+grails.plugin.springsecurity.interceptUrlMap = [
+        '/':                ['permitAll'],
+        '/assets/**':       ['permitAll'],
+        '/partials/**':     ['permitAll'],
+        '/login/**':        ['permitAll'],
+        '/logout/**':       ['permitAll'],
+
+        '/userCon/**':        ['ROLE_ADMIN'],
+        '/api/login':       ['permitAll'],
+        // autres règles à insérer ici
+
+        '/**':              ['isFullyAuthenticated()']
+]
+
+grails.plugin.springsecurity.filterChain.chainMap = [
+        '/api/guest/**': 'anonymousAuthenticationFilter,restTokenValidationFilter,restExceptionTranslationFilter,filterInvocationInterceptor',
+        // Stateless chain
+        '/api/**': 'JOINED_FILTERS,-anonymousAuthenticationFilter,-exceptionTranslationFilter,-authenticationProcessingFilter,-securityContextPersistenceFilter',
+        // Traditional chain
+        '/**': 'JOINED_FILTERS,-restTokenValidationFilter,-restExceptionTranslationFilter'
+]
+grails.plugin.springsecurity.rest.token.validation.active = true
+grails.plugin.springsecurity.rest.token.validation.useBearerToken = false
+grails.plugin.springsecurity.rest.token.validation.headerName = 'X-Auth-Token'
+
+cors.headers = ['Access-Control-Allow-Headers': 'origin, authorization, accept, content-type, x-requested-with, X-Auth-Token']
+
+
+
 environments {
     development {
         grails.logging.jul.usebridge = true
@@ -115,3 +154,4 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
