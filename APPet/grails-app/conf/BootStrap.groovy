@@ -15,8 +15,7 @@ class BootStrap {
         def admin = new User(address: "casa 1",firstName: "Usuario1", lastName: "Apellido1", mobilPhone: 1234,emailUser: "admin@unal.com",password: "admin")
         admin.save()
 
-        def pet1 = new Pet(name: "milu",bornDate: new Date(),breed: "criollo", color: "Negro",gender: (char)'F',microchip: false)
-        pet1.save()
+        
 
         def client = new Client(address: "casa 2",firstName: "Usuario2", lastName: "Apellido2", mobilPhone: 5678,emailUser: "client@unal.com",password: "client1")
         client.save()
@@ -24,6 +23,9 @@ class BootStrap {
         def veterinary = new Veterinary(mobilPhone: 1234567890,name: "canitos", telephone: 12345678, address: "calledosfalsa",webPage: "www.lola.com")
         veterinary.save()
 
+		def pet1 = new Pet(name: "milu",bornDate: new Date(),breed: "criollo", color: "Negro",gender: (char)'F',microchip: false)
+        pet1.save()
+		
         UserRole.create(admin, roleAdmin)
         UserRole.create(client, roleClient)
         //CreatePet
