@@ -1,8 +1,5 @@
 package appet
-import grails.rest.Resource
 
-
-@Resource(uri='/client')
 class Client extends User{
 
     int vetId

@@ -33,7 +33,7 @@ target(dbmCreateChangelog: 'Creates an empty changelog file') {
 
 		if (!okToWrite(file.path)) return
 
-		String user = (System.getProperty('userCon.name') ?: '').trim()
+		String user = (System.getProperty('user.name') ?: '').trim()
 		String author = user ? "$user (generated)" : 'diff-generated'
 
 		ant.copy(file: "$databaseMigrationPluginDir/src/resources/changelog.template",

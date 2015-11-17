@@ -1,11 +1,8 @@
 package appet
 
-import grails.rest.Resource
-
-@Resource(uri='/userCon')
 class User {
 
-	transient springSecurityService
+	//transient springSecurityService //TODO
 
 	String firstName
 	String lastName
@@ -40,10 +37,10 @@ class User {
 	}
 
 	protected void encodePassword(){
-		password = springSecurityService.encodePassword(password)
+		//password = springSecurityService.encodePassword(password) //TODO
 	}
 	Set<User>getAuthorities(){
-		UserRole.findAllByUser(this).collect{it.role} as Set
+		//UserRole.findAllByUser(this).collect{it.role} as Set  //TODO
 	}
 
 }

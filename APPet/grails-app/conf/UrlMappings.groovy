@@ -1,22 +1,21 @@
 class UrlMappings {
 
 	static mappings = {
-        '/userCon'{
-            controller = 'User'
-            action = 'create'
-        }
-
-        '/pet'{
-            controller = 'Pet'
-            action = 'create'
-        }
-        "/$controller/$action?/$id?(.$format)?"{
+        "/$controller/$action?/$id?(.${format})?" {
             constraints {
                 // apply constraints here
             }
         }
-        "/api/users"(resources: "UserRestful")
-        "/"(view:"/index")
-        "500"(view:'/error')
+
+        "/"(view: "/index")
+        "500"(view: '/error')
+        //
+        // RESTService api
+        "/api/client"(resources: "client")
+        "/api/pet"(resources: "pet")
+        "/api/user"(resources: "user")
+        "/api/veterinary"(resources: "veterinary")
+
+
 	}
 }

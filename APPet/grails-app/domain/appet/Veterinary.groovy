@@ -1,8 +1,5 @@
 package appet
-import grails.rest.Resource
 
-
-@Resource(uri='/veterinary')
 class Veterinary
 {
 
@@ -10,7 +7,7 @@ class Veterinary
 	String address
 	String webPage
 	int telephone
-	int movilPhone
+	int mobilPhone
 
 	static hasMany= [services: Service, users: User, clinicHistories: ClinicHistory]
 
@@ -20,7 +17,7 @@ class Veterinary
     	address (blank:false, minSize:6)
     	webPage (url:true)
     	telephone (blank:false, size:8)
-    	movilPhone (blank:true, size:10)
+    	mobilPhone (blank:true, size:10)
     }
 	static mapping = {
 		id generator: 'increment'//, name: 'veterinary_id'

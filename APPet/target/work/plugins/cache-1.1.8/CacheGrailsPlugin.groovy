@@ -121,7 +121,7 @@ class CacheGrailsPlugin {
 		if (!(proxyTargetClass instanceof Boolean)) proxyTargetClass = false
 		def order = cacheConfig.aopOrder
 		if (!(order instanceof Number)) order = Ordered.LOWEST_PRECEDENCE
-		// allow userCon can to use their own key generator.
+		// allow user can to use their own key generator.
 		def cacheKeyGen = cacheConfig.keyGenerator ?: 'customCacheKeyGenerator'
 		customCacheKeyGenerator(CustomCacheKeyGenerator)
 

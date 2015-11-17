@@ -158,7 +158,7 @@ public abstract class AbstractFilter extends GenericFilterBean {
 	}
 
 	/**
-	 * Determine whether the userCon agent accepts GZIP encoding. This feature is
+	 * Determine whether the user agent accepts GZIP encoding. This feature is
 	 * part of HTTP1.1. If a browser accepts GZIP encoding it will advertise this
 	 * by including in its HTTP header:
 	 * <p/>

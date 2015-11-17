@@ -40,7 +40,7 @@ class UserRole implements Serializable {
     }
 
     static constraints = {
-        id composite: ['role','userCon']
+        id composite: ['role','user']
         //version false
 
     }
