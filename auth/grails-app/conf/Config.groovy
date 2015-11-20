@@ -127,11 +127,13 @@ grails.plugin.springsecurity.interceptUrlMap = [
         '/assets/**':           ['permitAll'],
         '/partials/**':         ['permitAll'],
         '/api/user': ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/api/user/**': ['IS_AUTHENTICATED_ANONYMOUSLY'],
         '/**':                  ['isFullyAuthenticated()']
 ]
 
 grails.plugin.springsecurity.filterChain.chainMap = [
         '/api/user': 'nonAuthFilter',
+        '/api/user/**': 'nonAuthFilter',
         '/api/**': 'JOINED_FILTERS,-exceptionTranslationFilter,-authenticationProcessingFilter,-securityContextPersistenceFilter', // Stateless chain
         '/data/**': 'JOINED_FILTERS,-exceptionTranslationFilter,-authenticationProcessingFilter,-securityContextPersistenceFilter', // Stateless chain
         '/**': 'JOINED_FILTERS,-restTokenValidationFilter,-restExceptionTranslationFilter'   // Traditional chain

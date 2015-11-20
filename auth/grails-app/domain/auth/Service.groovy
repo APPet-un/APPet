@@ -1,11 +1,14 @@
 package auth
+import grails.rest.Resource
 
+
+@Resource(uri='/service')
 class Service
 {
 	String name
 	String description
 
-	//static belongsTo = [veterinary: Veterinary]
+	//static belongsTo = [veterinary: appet.Veterinary]
 
     static constraints =
     {
