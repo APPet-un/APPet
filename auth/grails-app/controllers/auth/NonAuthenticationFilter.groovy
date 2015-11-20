@@ -1,3 +1,4 @@
+package auth
 import org.springframework.web.filter.GenericFilterBean
 
 import javax.servlet.FilterChain
