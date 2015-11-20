@@ -1,4 +1,4 @@
-package appet
+package auth
 import grails.rest.Resource
 
 
