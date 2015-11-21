@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UN" name="auth.LaboratoryTestSpec" tests="1" time="0.25" timestamp="2015-11-21T00:18:07">
+  <properties />
+  <testcase classname="auth.LaboratoryTestSpec" name="validacion de creacion" time="0.234" />
+  <system-out><![CDATA[--Output from validacion de creacion--
+]]></system-out>
+  <system-err><![CDATA[--Output from validacion de creacion--
+]]></system-err>
+</testsuite>

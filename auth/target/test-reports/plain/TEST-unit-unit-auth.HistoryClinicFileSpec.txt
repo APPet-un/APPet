@@ -1,0 +1,10 @@
+Testsuite: auth.HistoryClinicFileSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0,375 sec
+------------- Standard Output ---------------
+--Output from validacion de creacion--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from validacion de creacion--
+------------- ---------------- ---------------
+
+Testcase: validacion de creacion took 0,359 sec

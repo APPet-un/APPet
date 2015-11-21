@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UN" name="auth.UserSpec" tests="3" time="0.375" timestamp="2015-11-21T00:18:08">
+  <properties />
+  <testcase classname="auth.UserSpec" name="validacion de nombres" time="0.234" />
+  <testcase classname="auth.UserSpec" name="validacion de telefonos" time="0.063" />
+  <testcase classname="auth.UserSpec" name="validacion de direcciones" time="0.062" />
+  <system-out><![CDATA[--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--
+]]></system-out>
+  <system-err><![CDATA[--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--
+]]></system-err>
+</testsuite>

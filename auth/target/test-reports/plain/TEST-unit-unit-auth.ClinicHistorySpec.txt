@@ -1,0 +1,10 @@
+Testsuite: auth.ClinicHistorySpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0,562 sec
+------------- Standard Output ---------------
+--Output from validacion de nombres--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from validacion de nombres--
+------------- ---------------- ---------------
+
+Testcase: validacion de nombres took 0,516 sec

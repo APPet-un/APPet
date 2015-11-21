@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UN" name="auth.AppointmentSchedulingSpec" tests="3" time="11.083" timestamp="2015-11-21T00:17:55">
+  <properties />
+  <testcase classname="auth.AppointmentSchedulingSpec" name="name pet null" time="10.537" />
+  <testcase classname="auth.AppointmentSchedulingSpec" name="name doctor null" time="0.125" />
+  <testcase classname="auth.AppointmentSchedulingSpec" name="date null" time="0.078" />
+  <system-out><![CDATA[--Output from name pet null--
+--Output from name doctor null--
+--Output from date null--
+]]></system-out>
+  <system-err><![CDATA[--Output from name pet null--
+--Output from name doctor null--
+--Output from date null--
+]]></system-err>
+</testsuite>

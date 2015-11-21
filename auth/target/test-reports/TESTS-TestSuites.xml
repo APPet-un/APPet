@@ -1,2 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites />
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="UN" id="0" name="AppointmentSchedulingSpec" package="auth" tests="3" time="11.083" timestamp="2015-11-21T00:17:55">
+      <properties />
+
+      <testcase classname="auth.AppointmentSchedulingSpec" name="name pet null" time="10.537" />
+
+      <testcase classname="auth.AppointmentSchedulingSpec" name="name doctor null" time="0.125" />
+
+      <testcase classname="auth.AppointmentSchedulingSpec" name="date null" time="0.078" />
+
+      <system-out><![CDATA[--Output from name pet null--
+--Output from name doctor null--
+--Output from date null--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from name pet null--
+--Output from name doctor null--
+--Output from date null--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="1" name="ClinicHistorySpec" package="auth" tests="1" time="0.562" timestamp="2015-11-21T00:18:06">
+      <properties />
+
+      <testcase classname="auth.ClinicHistorySpec" name="validacion de nombres" time="0.516" />
+
+      <system-out><![CDATA[--Output from validacion de nombres--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validacion de nombres--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="2" name="HistoryClinicFileSpec" package="auth" tests="1" time="0.375" timestamp="2015-11-21T00:18:06">
+      <properties />
+
+      <testcase classname="auth.HistoryClinicFileSpec" name="validacion de creacion" time="0.359" />
+
+      <system-out><![CDATA[--Output from validacion de creacion--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validacion de creacion--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="3" name="LabFileSpec" package="auth" tests="1" time="0.344" timestamp="2015-11-21T00:18:07">
+      <properties />
+
+      <testcase classname="auth.LabFileSpec" name="validacion de creacion" time="0.312" />
+
+      <system-out><![CDATA[--Output from validacion de creacion--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validacion de creacion--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="4" name="LaboratoryTestSpec" package="auth" tests="1" time="0.25" timestamp="2015-11-21T00:18:07">
+      <properties />
+
+      <testcase classname="auth.LaboratoryTestSpec" name="validacion de creacion" time="0.234" />
+
+      <system-out><![CDATA[--Output from validacion de creacion--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validacion de creacion--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="5" name="PetSpec" package="auth" tests="1" time="0.468" timestamp="2015-11-21T00:18:08">
+      <properties />
+
+      <testcase classname="auth.PetSpec" name="verificacion de creacion" time="0.437" />
+
+      <system-out><![CDATA[--Output from verificacion de creacion--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from verificacion de creacion--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="6" name="UserSpec" package="auth" tests="3" time="0.375" timestamp="2015-11-21T00:18:08">
+      <properties />
+
+      <testcase classname="auth.UserSpec" name="validacion de nombres" time="0.234" />
+
+      <testcase classname="auth.UserSpec" name="validacion de telefonos" time="0.063" />
+
+      <testcase classname="auth.UserSpec" name="validacion de direcciones" time="0.062" />
+
+      <system-out><![CDATA[--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UN" id="7" name="VeterinarySpec" package="auth" tests="1" time="0.407" timestamp="2015-11-21T00:18:09">
+      <properties />
+
+      <testcase classname="auth.VeterinarySpec" name="validacion de creacion" time="0.36" />
+
+      <system-out><![CDATA[--Output from validacion de creacion--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validacion de creacion--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

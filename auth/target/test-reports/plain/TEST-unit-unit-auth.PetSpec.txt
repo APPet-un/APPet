@@ -1,0 +1,10 @@
+Testsuite: auth.PetSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0,468 sec
+------------- Standard Output ---------------
+--Output from verificacion de creacion--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from verificacion de creacion--
+------------- ---------------- ---------------
+
+Testcase: verificacion de creacion took 0,437 sec
