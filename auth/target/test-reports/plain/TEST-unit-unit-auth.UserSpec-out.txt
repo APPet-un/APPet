@@ -1,0 +1,3 @@
+--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--

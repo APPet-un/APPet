@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UN" name="auth.ClinicHistorySpec" tests="1" time="1.375" timestamp="2015-11-21T00:29:32">
+  <properties />
+  <testcase classname="auth.ClinicHistorySpec" name="validacion de nombres" time="1.344" />
+  <system-out><![CDATA[--Output from validacion de nombres--
+]]></system-out>
+  <system-err><![CDATA[--Output from validacion de nombres--
+]]></system-err>
+</testsuite>

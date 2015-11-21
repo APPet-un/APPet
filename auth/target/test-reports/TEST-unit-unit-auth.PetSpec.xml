@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UN" name="auth.PetSpec" tests="1" time="1.389" timestamp="2015-11-21T00:29:34">
+  <properties />
+  <testcase classname="auth.PetSpec" name="verificacion de creacion" time="1.358" />
+  <system-out><![CDATA[--Output from verificacion de creacion--
+]]></system-out>
+  <system-err><![CDATA[--Output from verificacion de creacion--
+]]></system-err>
+</testsuite>

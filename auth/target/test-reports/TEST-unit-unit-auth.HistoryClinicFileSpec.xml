@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UN" name="auth.HistoryClinicFileSpec" tests="1" time="0.422" timestamp="2015-11-21T00:29:33">
+  <properties />
+  <testcase classname="auth.HistoryClinicFileSpec" name="validacion de creacion" time="0.406" />
+  <system-out><![CDATA[--Output from validacion de creacion--
+]]></system-out>
+  <system-err><![CDATA[--Output from validacion de creacion--
+]]></system-err>
+</testsuite>

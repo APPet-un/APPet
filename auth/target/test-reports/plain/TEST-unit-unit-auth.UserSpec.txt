@@ -1,0 +1,16 @@
+Testsuite: auth.UserSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0,391 sec
+------------- Standard Output ---------------
+--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from validacion de nombres--
+--Output from validacion de telefonos--
+--Output from validacion de direcciones--
+------------- ---------------- ---------------
+
+Testcase: validacion de nombres took 0,297 sec
+Testcase: validacion de telefonos took 0,031 sec
+Testcase: validacion de direcciones took 0,047 sec
