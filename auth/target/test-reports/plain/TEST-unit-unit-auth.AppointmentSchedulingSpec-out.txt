@@ -1,3 +1,0 @@
---Output from name pet null--
---Output from name doctor null--
---Output from date null--
