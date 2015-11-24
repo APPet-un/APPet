@@ -26,6 +26,12 @@ class UserController extends RestfulController{
 
     }
 
+    def findPets = {
+        String email = params.email
+        User user = User.findByEmailUser(email)
+        respond user.pets
+    }
+
     def show(User userInstance) {
         respond userInstance
     }
