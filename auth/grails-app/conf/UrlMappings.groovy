@@ -16,7 +16,10 @@ class UrlMappings {
         "/api/user"(resources: "user")
         "/api/user/$email"(resources: "user")
         "/api/veterinary"(resources: "veterinary")
-
+        "api/user/findPets" {
+            controller = "User"
+            action = "findPets"
+        }
 
     }
 }
