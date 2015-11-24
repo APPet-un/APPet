@@ -11,7 +11,7 @@ import static org.springframework.http.HttpStatus.OK
 
 class UserController extends RestfulController{
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE", findPets: "GET"]
 
     static responseFormats = ['json','xml']
 
@@ -23,7 +23,6 @@ class UserController extends RestfulController{
     def index(Integer max) {
         String email = params.email
         respond User.findByEmailUser(email)
-
     }
 
     def findPets = {

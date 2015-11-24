@@ -9,10 +9,16 @@ import grails.transaction.Transactional
 class PetController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static responseFormats = ['json','xml']
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Pet.list(params), model: [petInstanceCount: Pet.count()]
+        String email = params.email
+        def query = User.where {
+            emailUser == email
+        }
+        User user = query.find()
+        respond user.pets
+
     }
 
     def show(Pet petInstance) {
