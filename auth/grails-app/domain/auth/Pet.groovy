@@ -15,18 +15,20 @@ class Pet
     HistoryClinicFile photo
 
     //static hasOne = [clinicHistory: ClinicHistory,vaccionationRecord: VaccinationRecord]
-    static belongsTo = [owner: Client]
+    static belongsTo = [owner: User]
 
     static constraints =
             {
                 name (blank:false, minSize:3)
                 bornDate (blank:false)
-                gender (blank:false, inList: ["F","M"])
+                gender (blank:false)
                 species (blank:false, minSize:4)
-                //signals(blank: true)
+                signals(nullable: true)
                 breed (blank:false, minSize:5)
                 color (blank:false, minSize:3)
                 microchip (blank:false)
+                photo(nullable: true)
+
             }
     static mapping = {
         id generator: 'increment'//, name: 'pet_id'

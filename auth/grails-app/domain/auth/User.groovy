@@ -8,7 +8,7 @@ class User {
     String lastName
     String address
     int telephone
-    int mobilPhone
+    int mobilePhone
     String emailUser
     String username
     String password
@@ -16,6 +16,8 @@ class User {
     boolean accountExpired
     boolean accountLocked
     boolean passwordExpired
+    int vetId
+    static hasMany = [pets: Pet]
 
     static transients = ['springSecurityService']
 
@@ -24,7 +26,7 @@ class User {
         firstName (blank:false, minSize:3)
         lastName (blank:false, minSize:3)
         telephone (blank:true, size:8)
-        mobilPhone (blank:true, size:10)
+        mobilePhone (blank:true, size:10)
         address (blank:true, nullable: true )
         emailUser(blank: false,email: true)
         username blank: false, unique: true
