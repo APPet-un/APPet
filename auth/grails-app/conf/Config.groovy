@@ -126,7 +126,8 @@ grails.plugin.springsecurity.interceptUrlMap = [
         '/':                    ['permitAll'],
         '/assets/**':           ['permitAll'],
         '/partials/**':         ['permitAll'],
-        '/api/user': ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/api/user':    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/api/upload':    ['IS_AUTHENTICATED_ANONYMOUSLY'],
         '/api/user/**': ['IS_AUTHENTICATED_ANONYMOUSLY'],
         '/api/pet/**': ['IS_AUTHENTICATED_ANONYMOUSLY'],
         '/images/**': ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -135,6 +136,7 @@ grails.plugin.springsecurity.interceptUrlMap = [
 
 grails.plugin.springsecurity.filterChain.chainMap = [
         '/api/pet': 'nonAuthFilter',
+        '/api/upload': 'nonAuthFilter',
         '/api/user': 'nonAuthFilter',
         '/api/user/**': 'nonAuthFilter',
         '/images/**': 'nonAuthFilter',

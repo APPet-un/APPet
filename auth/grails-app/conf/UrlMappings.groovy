@@ -15,7 +15,7 @@ class UrlMappings {
         "/api/pet"(resources: "pet")
         "/api/user"(resources: "user")
         "/api/user/$email"(resources: "user")
-        "/api/pet/$email"(resources: "pet")
+        //"/api/upload" (resources: "upload")
         "/api/veterinary"(resources: "veterinary")
 
 
