@@ -1,3 +1,4 @@
+package auth
 import auth.User
 import grails.converters.JSON
 import grails.converters.XML

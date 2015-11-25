@@ -1,13 +1,17 @@
 package auth
 
 class Post {
-
+    String title
+    String description
+    int type
 
     static constraints = {
+        title (blank: false, nullable: false)
+        description (blank: false, nullable: false)
+        type (blank: false, nullable: false)
     }
 
     static mapping = {
-        id generator: 'increment'//, name: 'pet_id'
-        //id name: 'pet_id', type: 'integer'
+        id generator: 'increment'//, name: 'post_id'
     }
 }

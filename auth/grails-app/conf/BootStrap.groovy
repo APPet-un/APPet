@@ -1,3 +1,4 @@
+import auth.Post
 import auth.Role
 import auth.User
 import auth.UserRole
@@ -21,11 +22,13 @@ class BootStrap {
 
         Pet pet3 = new Pet(name: 'asdo',bornDate: new Date(),gender: (char)'F',species: 'hamster',breed: 'criollo',color: 'cafe',microchip: false,owner: user1).save(failOnError: true)
 
+        Post post1 = new Post(description: ":v busco pareja gonita", title: "se busca novia", type: 1).save()
 
         Role roleUser = new Role(authority: "ROLE_USER")
         roleUser.save()
 
         new UserRole(user: user, role: roleUser).save()
+
 
 
     }

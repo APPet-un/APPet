@@ -1,3 +1,4 @@
+package auth
 import auth.Pet
 import auth.User
 import grails.rest.RestfulController

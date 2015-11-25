@@ -1,3 +1,4 @@
+package auth
 import auth.LaboratoryTest
 
 import static org.springframework.http.HttpStatus.*
