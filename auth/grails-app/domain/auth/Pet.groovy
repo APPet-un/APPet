@@ -1,7 +1,5 @@
 package auth
-import grails.rest.Resource
 
-@Resource(uri='/pet')
 class Pet
 {
     String name

@@ -13,6 +13,7 @@ class UrlMappings {
         // RESTService api
         "/api/client"(resources: "client")
         "/api/pet"(resources: "pet")
+        "/api/pet/$email"(resources: "pet")
         "/api/user"(resources: "user")
         "/api/user/$email"(resources: "user")
         //"/api/upload" (resources: "upload")

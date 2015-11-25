@@ -12,7 +12,7 @@ class User {
     String emailUser
     String username
     String password
-    boolean enabled
+    boolean enabled = true
     boolean accountExpired
     boolean accountLocked
     boolean passwordExpired
@@ -22,7 +22,6 @@ class User {
     static transients = ['springSecurityService']
 
     static constraints = {
-        boolean enabled = true
         firstName (blank:false, minSize:3)
         lastName (blank:false, minSize:3)
         telephone (blank:true, size:8)
