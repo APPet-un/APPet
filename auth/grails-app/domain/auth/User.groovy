@@ -32,7 +32,7 @@ class User {
         address (blank:true, nullable: true )
         country (blank:false, minSize:5)
         city (blank:false, minSize:3)
-        veterinary (blank: true, minSize: 5)
+        veterinary (nullable: true, minSize: 5)
         emailUser(blank: false,email: true)
         username blank: false, unique: true
         password blank: false
