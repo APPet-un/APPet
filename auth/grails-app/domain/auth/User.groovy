@@ -7,6 +7,9 @@ class User {
     String firstName
     String lastName
     String address
+    String country
+    String city
+    String veterinary
     int telephone
     int mobilePhone
     String emailUser
@@ -27,6 +30,9 @@ class User {
         telephone (blank:true, size:8)
         mobilePhone (blank:true, size:10)
         address (blank:true, nullable: true )
+        country (blank:false, minSize:5)
+        city (blank:false, minSize:3)
+        veterinary (blank: true, minSize: 5)
         emailUser(blank: false,email: true)
         username blank: false, unique: true
         password blank: false
