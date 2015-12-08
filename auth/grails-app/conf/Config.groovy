@@ -139,7 +139,7 @@ grails.plugin.springsecurity.filterChain.chainMap = [
         '/api/pet': 'nonAuthFilter',
         '/api/upload': 'nonAuthFilter',
         '/api/user': 'nonAuthFilter',
-        '/api/post': 'nonAuthFilter',
+        '/api/post/**': 'nonAuthFilter',
         '/api/user/**': 'nonAuthFilter',
         '/images/**': 'nonAuthFilter',
         '/api/**': 'JOINED_FILTERS,-exceptionTranslationFilter,-authenticationProcessingFilter,-securityContextPersistenceFilter', // Stateless chain

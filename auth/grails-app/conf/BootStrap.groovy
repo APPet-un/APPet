@@ -29,8 +29,6 @@ class BootStrap {
 
         new UserRole(user: user, role: roleUser).save()
 
-
-
     }
     def destroy = {
 
