@@ -1,0 +1,6 @@
+ [
+    { "name": "Loki", "propietario": "Blanca", "celular": "315794683", "correo": "asdf@example.com" },
+    { "name": "Fito", "propietario": "Cristian", "celular": "315794646", "correo": "bsdf@example.com" },
+    { "name": "Mateo", "propietario": "nubia", "celular": "315794678", "correo": "csdf@example.com" },
+    { "name": "mia", "propietario": "fam avila", "celular": "315794612", "correo": "dsdf@example.com" }
+  ]
